@@ -4,31 +4,28 @@
 
 ## 1. 我的背景与职业目标
 
-我是有多年 Java / Spring Boot 后端开发经验的工程师，目前主要技术栈是：
+我是有多年 Java / Spring Boot / vue 全栈开发经验的工程师，同时也是公司内部的架构师并负责前沿技术研究，目前主要技术栈是：
 
 * Java / JDK 8
 * Spring Boot
 * MyBatis
-* Oracle
+* Oracle / MySQL
 * Redis / MQ
 * Vue2
+* ......
 
-我的长期职业目标不是成为纯算法/模型训练工程师，而是从：
+我的职业目标发展路线从：
 
-**传统 Java 后端工程师 → AI Application Engineer → AI Platform / AI Engineer**
+**传统 Java 后端工程师 → 全栈工程师 → 架构设计师 → AI Application Engineer → AI Platform / AI Engineer**
 
-因此，我希望充分利用已有 Java 工程能力，同时系统补充 LLM、RAG、Agent、Workflow、AI Infrastructure、AI Application Architecture 等能力。
-
-这个项目的重要目的之一，是作为我寻找下一份更高薪 AI 相关工作的长期技术履历和 GitHub Portfolio。
+我希望充分利用已有 Java、前端预计架构工程能力的基础下，同时系统补充 LLM、RAG、Agent、Workflow、AI Infrastructure、AI Application Architecture 等能力。
 
 因此，项目必须同时满足：
 
 1. 真正学习 AI 应用架构
 2. 提升 Java 系统设计和工程能力
 3. 构建高质量、可维护、可扩展的代码
-4. 形成优秀的 GitHub 项目展示
-5. 能够作为未来简历和面试中的核心项目进行讲解
-6. 所有重要技术决策必须能够解释“为什么这样设计”
+4. 所有重要技术决策必须能够解释“为什么这样设计”
 
 ---
 
