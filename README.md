@@ -14,4 +14,72 @@
 
 ---
 
+## 🧩 Modules
+
+### AI Core
+
+`ai-core` 是项目的 AI 基础领域模块，提供各 AI 能力模块共同使用的核心概念。
+
+目前包含：
+
+* `Model`：AI 模型基础抽象
+* `Message`：AI 交互消息
+* `MessageRole`：消息角色
+* `MessageContent`：消息内容抽象
+* `TextContent`：文本消息内容
+* `Context`：AI 处理上下文
+* `Metadata`：对象附加元数据
+
+---
+
+### AI LLM
+
+`ai-llm` 提供大语言模型聊天能力，并基于 `ai-core` 建立统一的 LLM 调用抽象。
+
+核心能力包括：
+
+* `ChatModel`：聊天模型抽象
+* `ChatRequest`：聊天请求
+* `ChatResponse`：聊天响应
+* `ChatOptions`：模型生成参数
+* `ChatUsage`：Token 使用统计
+* `ChatClient`：统一聊天调用入口
+* `ChatModelRegistry`：聊天模型注册与管理
+
+当前已实现 OpenAI-compatible Provider：
+
+```text
+ChatClient
+    ↓
+ChatModelRegistry
+    ↓
+ChatModel
+    ↓
+OpenAiChatModel
+    ↓
+OpenAiClient
+    ↓
+OpenAI-compatible API
+```
+
+支持通过 Spring Boot 配置注册多个聊天模型，并通过统一的 `ChatClient` 进行调用。
+
+---
+
+## 🏗️ Project Structure
+
+```text
+ai-foundation-orbit
+├── ai-core
+│   └── AI 核心领域模型
+│
+├── ai-llm
+│   └── LLM 聊天能力
+│       └── OpenAI-compatible Provider
+│
+└── ...
+```
+
+---
+
 > 🛰️ **Build the foundation. Explore the orbit.**

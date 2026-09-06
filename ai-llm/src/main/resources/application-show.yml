@@ -1,0 +1,8 @@
+# 根据实际的地址写，再选中对应的yml启动文件
+ai:
+  llm:
+    openai:
+      base-url: https://your-openai-compatible-api/v1
+      api-key: ${AI_LLM_API_KEY}
+      models:
+        - model-id: Qwen/Qwen3-8B
