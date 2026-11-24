@@ -82,4 +82,24 @@ ai-foundation-orbit
 
 ---
 
+## 本地构建与测试
+
+使用 JDK 8 和支持 Java 8 的 Maven 3.9.x，在仓库根目录执行：
+
+```bash
+mvn --batch-mode --no-transfer-progress verify
+```
+
+默认验证无需模型凭据。GitHub Actions 对推送到 `main` 的提交以及以 `main` 为目标的 PR 执行相同命令。
+
+OpenAI 兼容服务集成测试需要显式启用。配置环境变量 `AI_LLM_API_KEY` 后，可使用仓库的 `show` 配置运行：
+
+```bash
+mvn --batch-mode --no-transfer-progress -Dorbit.live-tests=true -Dspring.profiles.active=show test
+```
+
+仓库协作约定见 [AGENTS.md](AGENTS.md)。
+
+---
+
 > 🛰️ **Build the foundation. Explore the orbit.**

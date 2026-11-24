@@ -10,6 +10,7 @@ import com.foundation.ai.llm.chat.ChatRequest;
 import com.foundation.ai.llm.chat.ChatResponse;
 import com.foundation.ai.llm.client.ChatClient;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledIfSystemProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -23,6 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
  * @date: 2026/9/6
  */
 @SpringBootTest(classes = AiLlmTestApplication.class)
+@EnabledIfSystemProperty(named = "orbit.live-tests", matches = "true")
 public class OpenAiChatModelTest {
 
     @Autowired
